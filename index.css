@@ -1,0 +1,23 @@
+body {
+    background: repeating-linear-gradient(45deg, yellow 0px, yellow 40px, black 40px, black 80px);
+    background-attachment: fixed;
+    text-align: center;
+    margin:  100px auto;
+    min-height: 100%;                           
+
+}
+
+h1 {
+    font-size: 150px;
+}
+
+p {
+    font-size: 28px;
+}
+
+.outerframe {
+    background-color: yellow;
+    display: inline-block;
+    width: 75%;
+    z-index: 1;
+}

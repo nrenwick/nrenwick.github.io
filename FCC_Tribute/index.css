@@ -1,0 +1,48 @@
+html {
+    background-color: #000000;
+  }
+  
+  #main {
+    color: #FFD90F;
+  }
+  
+  #title {
+    text-align: center;
+    font-size: 150px;
+    font-family: "Patrick Hand", "Times New Roman";
+    margin-bottom: -5px;
+  }
+  
+  #quote {
+    text-align: center;
+    color: #70D1FE;
+    font-size: 20px;
+    font-family: "Patrick Hand", "Times New Roman";
+  }
+  
+  /* Centers Image element */
+  #image {
+    max-width: 100%;
+    display: block;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  #img-caption {
+    text-align: center;
+    font-size: 12px;
+  }
+  
+  #tribute-info {
+    text-align: left;
+    color: #D1B271;
+  }
+  
+  #tribute-link {
+    color: #ffffff;
+  }
+  
+  #tribute-link:visited {
+    color: #424F46;
+  }

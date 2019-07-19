@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="index.css">
+    <link href="https://fonts.googleapis.com/css?family=Patrick Hand" rel="stylesheet" type="text/css">
+
+    <title>FCC Tribute Page</title>
+</head>
+
+<body>
+    <!-- User Story #1: My tribute page should have an element with a corresponding id="main", which contains all other elements. -->
+    <main id="main">
+        <!-- User Story #2: I should see an element with a corresponding id="title", which contains a string (i.e. text) that 
+            describes the subject of the tribute page (e.g. "Dr. Norman Borlaug"). -->
+        <h1 id="title">Homer Simpson</h1>
+        <h5 id="quote">"Donuts... Is there anything they can't do?"</h5>
+        <!-- User Story #3: I should see a div element with a corresponding id="img-div". -->
+        <figure id="img-div">
+            <!-- User Story #4: Within the img-div element, I should see an img element with a corresponding id="image". -->
+            <!-- User Story #8: The img element should responsively resize, relative to the width of its parent element, 
+                without exceeding its original size. -->
+            <img id="image"
+                src="https://vignette.wikia.nocookie.net/simpsons/images/6/64/212px-Homer_Simpson_2006.png/revision/latest?cb=20150420235112">
+            <!-- User Story #5: Within the img-div element, I should see an element with a corresponding id="img-caption" that 
+                contains textual content describing the image shown in img-div. -->
+            <!-- User Story #9: The img element should be centered within its parent element. -->
+            <figcaption id="img-caption">Homer Simpson eating a donut.</figcaption>
+        </figure>
+        <!-- User Story #6: I should see an element with a corresponding id="tribute-info", which contains textual content 
+            describing the subject of the tribute page. -->
+        <div id="tribute-info">
+            <p>
+                Homer Jay Simpson was born on May 12, 1956. He was raised on the Simpson farm by his parents until they
+                were forced to move out due to Homer scaring the cows by jumping out of a bale of hay and scaring them
+                into giving sour milk, causing the bank to foreclose it. At some point in his childhood, Homer began
+                drinking alcohol, and accidentally caused a traffic jam in his Playschool car.
+            </p>
+            <p>
+                Homer attended Springfield High School and fell in love with Marge Bouvier. After graduating, Marge and
+                Homer bought an apartment at Springfield Place together. During this time, Marge got a letter accepting
+                her into a college. To pay for her tuition, Abe gives Homer a job at Simpson Laser Tag. The couple broke
+                up for some time after Homer started a Grunge band called Sadgasm. Marge realizes that she really loves
+                Homer, and she goes back to him.[18] At some point between finishing high school and marrying Marge,
+                Homer briefly served in the US Army, but never saw combat. Due to a clerical error, he was discharged
+                two weeks early and years later after a disastrous dinner party with his old sergeant, Homer was forced
+                to complete his tour of duty.
+            </p>
+            <p>
+                When the couple were in their mid-20s, Marge became pregnant with Bart. At this time Homer was working
+                at Sir Putt-A-Lot's Merrie Olde Fun Centre, turning the crank that spins the windmill. The two got
+                married in Shotgun Pete's 24 Hour Wedding Chapel, a small wedding chapel across the state line. They
+                spent their wedding reception alone at a truck stop, before ending up at the Bouvier House, where they
+                lived at the time. After failing to get a job at the Springfield Nuclear Power Plant, Homer left Marge
+                to find a job by which he could support his family. He went to work at a taco restaurant called the Gulp
+                'n' Blow until Marge found him and convinced him to return home with her. As a result, Homer confronted
+                Mr. Burns and secured a job at the Plant. Two years after Bart was born, Marge became pregnant with
+                Lisa, shortly before they bought their first house. Homer's second leap to stardom was his success as
+                the lead singer and songwriter for the barbershop quartet The Be Sharps, even winning a Grammy. During
+                his time with the group, Homer was frequently absent from home, which put stress on his marriage. After
+                the group broke up due to creative differences, Homer went back to Springfield to continue his old life.
+            </p>
+        </div>
+        <!-- User Story #7: I should see an a element with a corresponding id="tribute-link", which links to an outside site 
+            that contains additional information about the subject of the tribute page. HINT: You must give your element an 
+            attribute of target and set it to _blank in order for your link to open in a new tab (i.e. target="_blank"). -->
+        <h3>For more information about Homer Simpson, pleae visit his <a id="tribute-link"
+                href="https://simpsons.fandom.com/wiki/Homer_Simpson" target="_blank">Fandom Wiki</a> page.</h3>
+
+    </main>
+</body>
+
+</html>

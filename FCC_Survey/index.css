@@ -1,0 +1,69 @@
+@import url(https://fonts.googleapis.com/css?family=Acme);
+
+html {
+  background-color: #f65656;
+  color: #eebf77;
+  font-family: "Acme";
+}
+
+.form-outer {
+  background-color: #9f1313;
+  margin: 0 auto;
+  border-radius: 4px;
+  width: 75%;
+  max-width: 900px;
+  padding: 10px;
+  padding-top: 20px;
+  box-shadow: 0 5px 4px #000000, 0 10px 20px,#000000;
+  text-align: center;
+
+}
+
+#title {
+  font-family: "Acme";
+  color: 		#eebf77;
+  text-align: center;
+  text-shadow: 0px 5px 4px #000000;
+}
+
+#description {
+  text-align: center;
+}
+
+.labels {
+  display: inline-block;
+  text-align: right;
+  width: 40%;
+  padding: 5px;
+  vertical-align: top;
+  margin-top: 10px;
+}
+
+.answers {
+  display: inline-block;
+  text-align: left;
+  width: 48%;
+  vertical-align: bottom;
+}
+
+#submit {
+  background-color: #eebf77;
+  border-radius: 4px;
+  color: black;
+  font-size: 1em;
+  height: 40px;
+  width: 96px;
+  margin: 10px;
+  border: 0px solid;
+  box-shadow: 0 5px 10px #000000
+}
+
+.comments {
+  display: inline-block;
+  text-align: center;
+}
+
+#comments{
+  height: 100px;
+  width: 100%;
+}

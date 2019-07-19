@@ -35,6 +35,8 @@ html {
   }
   
   #tribute-info {
+    margin-left: 20px;
+    margin-right: 20px;
     text-align: left;
     color: #D1B271;
   }
@@ -45,4 +47,9 @@ html {
   
   #tribute-link:visited {
     color: #424F46;
+  }
+
+  .tribute-link {
+    margin-left: 20px;
+    margin-right: 20px;
   }

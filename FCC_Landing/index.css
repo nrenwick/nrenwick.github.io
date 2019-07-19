@@ -1,0 +1,67 @@
+.page-wrapper {
+    width: 100%;
+    height: 100%;
+
+}
+
+.page-wrapper::after {
+    content: "";
+    background: url("https://www.fuelcurve.com/wp-content/uploads/2017/05/flaming-grill.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    opacity: 0.5;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;   
+  }
+
+#header {
+    max-height: 110px;
+    margin: 10px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#nav-bar {
+    display: flex;
+    align-content: center;
+}
+
+#nav-bar > ul {
+    display: flex;
+    
+    margin: 0px 2em;
+    padding: 0px;
+}
+
+.nav-link {
+    list-style: none;
+    padding: 0.25em 1em;
+    margin: 0.5em;
+    font-size: 24px;
+}
+
+.nav-link > :visited {
+    color: black;
+}
+
+.logo {
+    margin: 0px 1em;
+}
+
+#video {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+#header-img {
+    height: 100px;
+    widows: 100px;
+}

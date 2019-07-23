@@ -1,12 +1,18 @@
-.page-wrapper {
+html{
+    overflow-x: hidden;
+
+}
+
+.page-wrapper {   
     width: 100%;
     height: 100%;
-
+		margin: 0;
 }
 
 .page-wrapper::after {
     content: "";
-    background: url("https://www.fuelcurve.com/wp-content/uploads/2017/05/flaming-grill.jpg");
+    background-color: transparent;
+    background: url(images/barbecue-bbq-charcoal-1233101.jpg);
     background-repeat: no-repeat;
     background-size: 100% 100%;
     background-attachment: fixed;
@@ -15,16 +21,19 @@
     left: 0;
     bottom: 0;
     right: 0;
-    position: absolute;
+    position: fixed;
     z-index: -1;   
   }
 
 #header {
-    max-height: 110px;
-    margin: 10px auto;
+    position: fixed;
+    height: 110px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    width: 100%;
+    background: linear-gradient(35deg,White,lightslategray);
+		margin: 0px;
 }
 
 #nav-bar {
@@ -34,9 +43,16 @@
 
 #nav-bar > ul {
     display: flex;
-    
-    margin: 0px 2em;
     padding: 0px;
+		margin: 0px;
+}
+
+a {
+    color: inherit;
+}
+
+li {
+	list-style: none;
 }
 
 .nav-link {
@@ -44,24 +60,139 @@
     padding: 0.25em 1em;
     margin: 0.5em;
     font-size: 24px;
+    color: white;
+    filter: drop-shadow(5px 5px 10px black);
 }
 
-.nav-link > :visited {
-    color: black;
-}
-
-.logo {
-    margin: 0px 1em;
-}
 
 #video {
     display: block;
+    width: 560px;
+    height: 315px;
     margin-left: auto;
     margin-right: auto;
+    padding-top: 150px;
 
 }
 
 #header-img {
     height: 100px;
-    widows: 100px;
+    width: 100px;
+    margin: 0px 1em;
+    filter: drop-shadow(5px 5px 10px black);
+
 }
+
+.services {
+    display: block;
+    max-width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.servicelist {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.pricing {
+    display: flex;
+}
+
+.pricing > ul {
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+}
+
+.pricelist {
+    border: 2px solid black;
+    width: 300px;
+    padding-bottom: 20px;
+    padding-right: 20px;
+
+}
+
+.pricelist > h2 {
+    text-align: center;
+}
+
+.pricing {
+    display: block;
+    max-width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#form {
+    max-width: 60%;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+#contactus {
+    display: block;
+    max-width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.labels {
+    display: inline-block;
+    text-align: right;
+    width: 40%;
+    padding: 5px;
+    vertical-align: top;
+    margin-top: 10px;
+  }
+  
+  .answers {
+    display: inline-block;
+    text-align: left;
+    width: 48%;
+    vertical-align: bottom;
+  }
+  
+  #submit {
+    background-color: lightslategray;
+    border-radius: 4px;
+    color: white;
+    font-size: 1em;
+    height: 40px;
+    width: 96px;
+    margin: 10px;
+    border: 0px solid;
+    box-shadow: 0 5px 10px #000000
+  }
+  
+  
+  #comments{
+    height: 100px;
+    width: 100%;
+  }
+  
+  @media only screen and (max-width: 375px){
+    .pricing > ul {
+        display: flex;
+        list-style: none;
+        justify-content: space-between;
+        flex-direction: column;
+    }
+    .pricelist {
+        border: 2px solid black;
+        width: 300px;
+        padding-bottom: 20px;
+        padding-right: 20px;
+        margin-bottom: 20px;
+    }
+
+    .nav-link {
+        font-size: 18px;
+    }
+    
+
+}
+
+    
+    
+  

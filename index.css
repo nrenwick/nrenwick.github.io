@@ -343,16 +343,16 @@ body {
   border-radius: 10px;
 }
 
-.tile-wrapper:hover {
+.tile-wrapper:hover, .tile-wrapper:active {
   background-color: rgba(255, 255, 255, 0.63);
   color: dimgray;
 }
 
-.tile-wrapper:hover > .project-link {
+.tile-wrapper:hover > .project-link, .tile-wrapper:active > .project-link {
   visibility: visible;
 }
 
-.project-link:hover {
+.project-link:hover, .project-link:active {
   transform: translateY(4px);
   filter: none;
 }

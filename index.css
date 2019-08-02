@@ -306,7 +306,7 @@ body {
   position: relative;
   height: 300px;
   width: 500px;
-  margin: 20px;
+  margin: 50px;
   border-radius: 10px;
 }
 
@@ -355,6 +355,16 @@ body {
 .project-link:hover {
   transform: translateY(4px);
   filter: none;
+}
+
+#tribute {
+  background: url(images/FCC_Tribute.PNG);
+  background-size: 100% 100%;
+}
+
+#survey {
+  background: url(images/FCC_Survey.PNG);
+  background-size: 100% 100%;
 }
 
 #landing {

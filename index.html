@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
@@ -8,20 +9,20 @@
     <script src="https://kit.fontawesome.com/283dd5d842.js"></script>
 
     <title>Nathan Renwick's Portfolio</title>
-  </head>
+</head>
 
-  <!-- User Story #9: My portfolio should have at least one media query. -->
+<!-- User Story #9: My portfolio should have at least one media query. -->
 
-  <div id="page-wrapper">
+<div id="page-wrapper">
     <!-- User Story #7: The navbar should contain at least one link that I can click on to navigate to different sections of the page. -->
     <!-- User Story #6: My portfolio should have a navbar with an id of navbar. -->
     <!-- User Story #11: The navbar should always be at the top of the viewport. -->
     <nav class="navbar" id="navbar">
-      <ul>
-        <li><a class="nav-link" href="#welcome">About</a></li>
-        <li><a class="nav-link" href="#projects">Projects</a></li>
-        <li><a class="nav-link" href="#contact-info">Contact</a></li>
-      </ul>
+        <ul>
+            <li><a class="nav-link" href="#welcome">About</a></li>
+            <li><a class="nav-link" href="#projects">Projects</a></li>
+            <li><a class="nav-link" href="#contact-info">Contact</a></li>
+        </ul>
     </nav>
 
     <!-- User Story #1: My portfolio should have a welcome section with an id of welcome-section. -->
@@ -29,72 +30,85 @@
     <!-- User Story #10: The height of the welcome section should be equal to the height of the viewport. -->
 
     <div id="welcome">
-      <h1 class="typewritter">Hello! I'm Nathan.</h1>
+        <h1 class="typewritter">Hello! I'm Nathan.</h1>
 
-      <h2 class="glitch" data-text="&lt;Web Developer&frasl;&gt;">
-        &lt;Web Developer&frasl;&gt;
-      </h2>
+        <h2 class="glitch" data-text="&lt;Web Developer&frasl;&gt;">
+            &lt;Web Developer&frasl;&gt;
+        </h2>
     </div>
     <!-- User Story #3: My portfolio should have a projects section with an id of projects. -->
     <!-- User Story #4: The projects section should contain at least one element with a class of project-tile to hold a project. -->
     <!-- User Story #5: The projects section should contain at least one link to a project. -->
 
     <div id="projects">
-      <h1 id="projects-header">Check out some of my projects.</h1>
-      <h2 class="section-header">
-        Responsive Web Design <i class="fab fa-html5"> &nbsp; </i
-        ><i class="fab fa-css3-alt"></i>
-      </h2>
-      <div id="project-grid">
+        <h1 id="projects-header">Check out some of my projects.</h1>
+        <h2 class="section-header">
+            Responsive Web Design <i class="fab fa-html5"> &nbsp; </i><i class="fab fa-css3-alt"></i>
+        </h2>
+        <div id="project-grid">
 
-        <div class="project-tile" id="landing">
-          <div class="tile-wrapper">
-            <a
-              class="project-link"
-              href="/FCC_Landing/index.html"
-              target="_blank"
-              ><i class="fas fa-globe"></i
-            ></a>
-            <a
-              class="project-link"
-              href="https://github.com/nrenwick/nrenwick.github.io/tree/master/FCC_Landing"
-              target="_blank"
-              ><i class="fas fa-code"></i
-            ></a>
-          </div>
-          <h3 class="tile-header">Product Landing Page</h3>
+            <div class="project-tile" id="tribute">
+                <div class="tile-wrapper">
+                    <a class="project-link" href="/FCC_Tribute/index.html" target="_blank"><i
+                            class="fas fa-globe"></i></a>
+                    <a class="project-link"
+                        href="https://github.com/nrenwick/nrenwick.github.io/tree/master/FCC_Tribute" target="_blank"><i
+                            class="fas fa-code"></i></a>
+                </div>
+                <h3 class="tile-header">Tribute Page</h3>
+            </div>
+
+            <div class="project-tile" id="survey">
+                <div class="tile-wrapper">
+                    <a class="project-link" href="/FCC_Survey/index.html" target="_blank"><i
+                            class="fas fa-globe"></i></a>
+                    <a class="project-link"
+                        href="https://github.com/nrenwick/nrenwick.github.io/tree/master/FCC_Survey" target="_blank"><i
+                            class="fas fa-code"></i></a>
+                </div>
+                <h3 class="tile-header">Survey Form</h3>
+            </div>
+
+
+            <div class="project-tile" id="landing">
+                <div class="tile-wrapper">
+                    <a class="project-link" href="/FCC_Landing/index.html" target="_blank"><i
+                            class="fas fa-globe"></i></a>
+                    <a class="project-link"
+                        href="https://github.com/nrenwick/nrenwick.github.io/tree/master/FCC_Landing" target="_blank"><i
+                            class="fas fa-code"></i></a>
+                </div>
+                <h3 class="tile-header">Product Landing Page</h3>
+            </div>
+
+            <div class="project-tile" id="technical">
+                <div class="tile-wrapper">
+                    <a class="project-link" href="/FCC_Technical/index.html" target="_blank"><i
+                            class="fas fa-globe"></i></a>
+                    <a class="project-link"
+                        href="https://github.com/nrenwick/nrenwick.github.io/tree/master/FCC_Technical"
+                        target="_blank"><i class="fas fa-code"></i></a>
+                </div>
+                <h3 class="tile-header">Technical Document Page</h3>
+            </div>
+
         </div>
-
-        <div class="project-tile" id="technical">
-          <div class="tile-wrapper">
-            <a
-              class="project-link"
-              href="/FCC_Technical/index.html"
-              target="_blank"
-              ><i class="fas fa-globe"></i
-            ></a>
-            <a
-              class="project-link"
-              href="https://github.com/nrenwick/nrenwick.github.io/tree/master/FCC_Technical"
-              target="_blank"
-              ><i class="fas fa-code"></i
-            ></a>
-          </div>
-          <h3 class="tile-header">Technical Document Page</h3>
-        </div>
-
-      </div>
     </div>
     <!-- User Story #8: My portfolio should have a link with an id of profile-link, which opens my GitHub or FCC profile in a new tab. -->
 
     <div id="contact-info">
-      <h1 id="contact-header">Want to contact me?</h1>
-      <div id="contact-links">
-        <a class="profile-link" id="profile-link" href="https://www.freecodecamp.org/nrenwick" target="_blank"><i class="fab fa-free-code-camp">&nbsp;</i>freeCodeCamp</a>
-        <a class="profile-link" id="github" href="https://nrenwick.github.io/index.html" target="_blank"><i class="fab fa-github">&nbsp;</i>GitHub</a>
-        <a class="profile-link" id="linkedin" href="https://www.linkedin.com/in/nathanrenwick/" target="_target"><i class="fab fa-linkedin">&nbsp;</i>LinkedIn</a>
-        <a class="profile-link" id="email" href="mailto:nrenwick@gmail.com" target="_blank"><i class="fas fa-at">&nbsp;</i>Email</a>
-      </div>
+        <h1 id="contact-header">Want to contact me?</h1>
+        <div id="contact-links">
+            <a class="profile-link" id="profile-link" href="https://www.freecodecamp.org/nrenwick" target="_blank"><i
+                    class="fab fa-free-code-camp">&nbsp;</i>freeCodeCamp</a>
+            <a class="profile-link" id="github" href="https://nrenwick.github.io/index.html" target="_blank"><i
+                    class="fab fa-github">&nbsp;</i>GitHub</a>
+            <a class="profile-link" id="linkedin" href="https://www.linkedin.com/in/nathanrenwick/" target="_target"><i
+                    class="fab fa-linkedin">&nbsp;</i>LinkedIn</a>
+            <a class="profile-link" id="email" href="mailto:nrenwick@gmail.com" target="_blank"><i
+                    class="fas fa-at">&nbsp;</i>Email</a>
+        </div>
     </div>
-  </div>
+</div>
+
 </html>

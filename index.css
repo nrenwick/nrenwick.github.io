@@ -1,23 +1,445 @@
 body {
-    background: repeating-linear-gradient(45deg, yellow 0px, yellow 40px, black 40px, black 80px);
-    background-attachment: fixed;
-    text-align: center;
-    margin:  100px auto;
-    min-height: 100%;                           
-
+  width: 100%;
+  height: 100%;
+  margin: 0;
 }
 
-h1 {
-    font-size: 150px;
+#page-wrapper {
+  display: flex;
+  flex-direction: column;
 }
 
-p {
-    font-size: 28px;
+#navbar {
+  width: 100%;
+  height: 70px;
+  background-color: #52618f;
+  position: fixed;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  z-index: 999;
 }
 
-.outerframe {
-    background-color: yellow;
-    display: inline-block;
-    width: 75%;
-    z-index: 1;
+#navbar > ul {
+  list-style: none;
+  display: flex;
+  padding: 0px;
+  margin: 0px;
+}
+
+.nav-link {
+  text-decoration: none;
+  padding: 0.25em 1em;
+  margin: 0.5em;
+  font-size: 24px;
+  color: white;
+  filter: drop-shadow(5px 5px 10px black);
+}
+
+#welcome {
+  margin: 0 0;
+  padding: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.typewritter {
+  max-width: 430px;
+  width: max-content;
+  height: 37px;
+  color: white;
+  font-family: "Courier New", Courier, monospace;
+  text-align: center;
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: 0.15em solid white; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: 0.15em; /* Adjust as needed */
+  animation: typing 3.5s steps(40, end), blink-caret 0.75s step-end;
+  animation-fill-mode: forwards;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: white;
+  }
+  100% {
+    border: none;
+  }
+}
+
+.glitch {
+  color: yellow;
+  font-size: 40px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0 auto;
+  width: 370px;
+  visibility: hidden;
+  animation: glitch 1s infinite linear alternate-reverse;
+  animation-delay: 1.5s;
+}
+
+.glitch {
+  position: relative;
+}
+
+.glitch:after {
+  animation: glitch-animation 1s infinite linear alternate-reverse;
+  animation-delay: 1.5s;
+  background: black;
+  clip: rect(0, 900px, 0, 0);
+  color: magenta;
+  content: attr(data-text);
+  left: 2px;
+  overflow: hidden;
+  position: absolute;
+  text-shadow: -1px 0 magenta;
+  top: 0;
+}
+
+.glitch:before {
+  animation: glitch-animation-2 2s infinite linear alternate-reverse;
+  animation-delay: 1.5s;
+  background: black;
+  clip: rect(0, 900px, 0, 0);
+  color: cyan;
+  content: attr(data-text);
+  left: -2px;
+  overflow: hidden;
+  position: absolute;
+  text-shadow: 1px 0 cyan;
+  top: 0;
+}
+
+@keyframes glitch {
+  to,
+  from {
+    visibility: visible;
+  }
+}
+
+@keyframes glitch-animation {
+  to,
+  from {
+    visibility: visible;
+  }
+  0% {
+    clip: rect(42px, 9999px, 44px, 0);
+  }
+  5% {
+    clip: rect(12px, 9999px, 59px, 0);
+  }
+  10% {
+    clip: rect(48px, 9999px, 29px, 0);
+  }
+  15.0% {
+    clip: rect(42px, 9999px, 73px, 0);
+  }
+  20% {
+    clip: rect(63px, 9999px, 27px, 0);
+  }
+  25% {
+    clip: rect(34px, 9999px, 55px, 0);
+  }
+  30.0% {
+    clip: rect(86px, 9999px, 73px, 0);
+  }
+  35% {
+    clip: rect(20px, 9999px, 20px, 0);
+  }
+  40% {
+    clip: rect(26px, 9999px, 60px, 0);
+  }
+  45% {
+    clip: rect(25px, 9999px, 66px, 0);
+  }
+  50% {
+    clip: rect(57px, 9999px, 98px, 0);
+  }
+  55.0% {
+    clip: rect(5px, 9999px, 46px, 0);
+  }
+  60.0% {
+    clip: rect(82px, 9999px, 31px, 0);
+  }
+  65% {
+    clip: rect(54px, 9999px, 27px, 0);
+  }
+  70% {
+    clip: rect(28px, 9999px, 99px, 0);
+  }
+  75% {
+    clip: rect(45px, 9999px, 69px, 0);
+  }
+  80% {
+    clip: rect(23px, 9999px, 85px, 0);
+  }
+  85.0% {
+    clip: rect(54px, 9999px, 84px, 0);
+  }
+  90% {
+    clip: rect(45px, 9999px, 47px, 0);
+  }
+  95% {
+    clip: rect(37px, 9999px, 20px, 0);
+  }
+  100% {
+  }
+}
+
+@keyframes glitch-animation-2 {
+  to,
+  from {
+    visibility: visible;
+  }
+  0% {
+    clip: rect(65px, 9999px, 100px, 0);
+  }
+  5% {
+    clip: rect(52px, 9999px, 74px, 0);
+  }
+  10% {
+    clip: rect(79px, 9999px, 85px, 0);
+  }
+  15.0% {
+    clip: rect(75px, 9999px, 5px, 0);
+  }
+  20% {
+    clip: rect(67px, 9999px, 61px, 0);
+  }
+  25% {
+    clip: rect(14px, 9999px, 79px, 0);
+  }
+  30.0% {
+    clip: rect(1px, 9999px, 66px, 0);
+  }
+  35% {
+    clip: rect(86px, 9999px, 30px, 0);
+  }
+  40% {
+    clip: rect(23px, 9999px, 98px, 0);
+  }
+  45% {
+    clip: rect(85px, 9999px, 72px, 0);
+  }
+  50% {
+    clip: rect(71px, 9999px, 75px, 0);
+  }
+  55.0% {
+    clip: rect(2px, 9999px, 48px, 0);
+  }
+  60.0% {
+    clip: rect(30px, 9999px, 16px, 0);
+  }
+  65% {
+    clip: rect(59px, 9999px, 50px, 0);
+  }
+  70% {
+    clip: rect(41px, 9999px, 62px, 0);
+  }
+  75% {
+    clip: rect(2px, 9999px, 82px, 0);
+  }
+  80% {
+    clip: rect(47px, 9999px, 73px, 0);
+  }
+  85.0% {
+    clip: rect(3px, 9999px, 27px, 0);
+  }
+  90% {
+    clip: rect(26px, 9999px, 55px, 0);
+  }
+  95% {
+    clip: rect(42px, 9999px, 97px, 0);
+  }
+  100% {
+    clip: rect(38px, 9999px, 49px, 0);
+  }
+}
+
+#projects {
+  width: 100%;
+  min-height: 100vh;
+  background-color: dimgray;
+  padding-bottom: 20px;
+}
+
+#projects-header {
+  margin: 0;
+  text-align: center;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.section-header {
+  margin-top: 20px;
+  margin-bottom: 0;
+  text-align: center;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#project-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin: 0;
+}
+
+.project-tile {
+  position: relative;
+  height: 300px;
+  width: 500px;
+  margin: 20px;
+  border-radius: 10px;
+}
+
+.tile-header {
+  display: block;
+  margin: 0;
+  width: 100%;
+  text-align: center;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.tile-wrapper {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.project-link {
+  visibility: hidden;
+  padding: 20px;
+  border-radius: 10px;
+  text-decoration: none;
+  text-align: center;
+  font-size: 18px;
+  background-color: dimgray;
+  color: rgba(255, 255, 255, 0.63);
+  filter: drop-shadow(4px 5px 5px black);
+}
+
+.tile-wrapper {
+  margin: 0;
+  height: 100%;
+  width: 100%;
+  border-radius: 10px;
+}
+
+.tile-wrapper:hover {
+  background-color: rgba(255, 255, 255, 0.63);
+  color: dimgray;
+}
+
+.tile-wrapper:hover > .project-link {
+  visibility: visible;
+}
+
+.project-link:hover {
+  transform: translateY(4px);
+  filter: none;
+}
+
+#landing {
+  background: url(images/FCC_Landing.PNG);
+  background-size: 100% 100%;
+}
+
+#technical {
+  background: url(images/FCC_Technical.PNG);
+  background-size: 100% 100%;
+}
+
+#contact-info {
+  display: block;
+  background-color: black;
+  padding-bottom: 50px;
+}
+
+#contact-header {
+  width: 100%;
+  color: white;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
+}
+
+#contact-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.profile-link {
+  margin: 10px 10px;
+  padding: 10px 10px;
+  color: white;
+  font-size: 24px;
+  text-decoration: none;
+}
+
+.profile-link:hover {
+  transform: scale(1.2,1.2);
+}
+
+@media only screen and (max-width: 415px) {
+  #navbar {
+    height: 50px;
+    justify-content: center;
+  }
+
+  .nav-link {
+    font-size: 16px;
+  }
+
+  .typewritter {
+    font-size: 24px;
+  }
+  
+  .glitch {
+    font-size: 32px;
+    width: 300px;
+    animation-delay: 3.5s;
+  }
+
+  .glitch:after {
+    animation-delay: 3.5s;
+  }
+  
+  .glitch:before {
+    animation-delay: 3.5s;
+  }
+  
+  #projects-header {
+    font-size: 24px;
+  }
+  
+  .section-header {
+    font-size: 18px;
+  }
+  
+  #contact-header {
+    font-size: 24px;
+  }
+  
+  .profile-link {
+    font-size: 18px;
+  }
 }
